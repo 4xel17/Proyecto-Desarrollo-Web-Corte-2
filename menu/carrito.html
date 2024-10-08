@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carrito.css">
+    <script src="./js/pizzas.js"></script>
+    <script src="./js/carrito.js" defer></script>
+    <script src="./js/cartService.js" defer></script>
+    <title>PizzaArt</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html">
+          <img src="./img/logo.jpg" id="logo" alt="Logo"> <!--imagen del logo con id logo -->
+        </a>
+        <div>
+          <a href="presen.html">Presentación</a> <!--link de MTB-->
+          <a href="#">Ruta</a><!--link de ruta-->
+          <a href="carrito.html" id="carrito"><img src="./img/iconoCarrito.jpg" alt="Carrito de compras"> <span
+            id="cuentaCarrito">0</span></a> <!--link del carrito que inicia cuenta en 0 articulos-->
+        </div>
+      </nav>
+    </header>
+    <main>
+      <p id="carrito-vacio">Ups!!, No hay productos en el carrito <a href="./index.html">Agrega algunos</a></p>
+      <section id="productos-container"></section>
+      <section id="totales">
+        <p>Total Unidades: <span id="unidades">0</span></p>
+        <p>Total a Pagar: $<span id="precio">0</span></p>
+        <div id="customer-info">
+          <h3>Información del Cliente</h3>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" name="direccion" required>
+        </div>
+        <button id="comprar">Comprar</button>
+        <button id="reiniciar">Reiniciar Carrito</button>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Creado por: Sara Zuluaga, Axel Bedoya y Carlos Montaña
+      </p>
+    </footer>
+  </body>
+
+</html>
